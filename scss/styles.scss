@@ -1,0 +1,295 @@
+@import "variables";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bower_components/components-font-awesome/scss/font-awesome";
+@import "webfonts";
+@import "parallax";
+
+/*----------------------------------------------------------------------------
+ * Main Body
+ *---------------------------------------------------------------------------*/
+
+html {}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+div {}
+hr {}
+br {}
+
+.title {
+  position:relative;
+  padding-top: 55px;
+}
+.about-header {
+  margin-top: -140px;
+  margin-bottom: 40px;
+}
+.about {
+  border-top: $brand-primary solid 10px;
+  background-color: $brand-gray;
+  color: $gray-lighter;
+  padding-bottom: 30px;
+}
+.songs-header {
+  margin-top: -140px;
+  margin-bottom: 40px;
+  color: $brand-red
+}
+.songs {
+  border-top: $brand-red solid 10px;
+  text-align: center;
+  color: $brand-red;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.music-icons {
+  padding: 50px 0;
+}
+.videos-header {
+  margin-top: -100px;
+  margin-bottom: 40px;
+}
+.videos {
+  border-top: $brand-primary solid 10px;
+  background-color: $brand-gray;
+  color: $gray-lighter;
+  padding-bottom: 30px;
+}
+.social-header {
+  margin-top: -47px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  text-align: center;
+}
+.social {
+  border-top: $brand-primary solid 10px;
+  background-color: $brand-gray;
+  color: $gray-lighter;
+  padding-bottom: 30px;
+}
+
+.main-nav {
+  background-color: $brand-gray;
+  font-size: 10px;
+  a {
+    color: $gray-lighter;
+  }
+  .nav {
+    background-color: $brand-gray;
+    height: 55px;
+    li>a {
+      padding: 5px 10px;
+    }
+    li>a:hover {
+      background-color:$brand-gray;
+      color: $gray-light;
+    }
+  }
+  .nav-justified>li, .nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+  }
+  .fa {
+    font-size: 18px;
+    padding-top:5px;
+  }
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  a {
+    color: $gray-lighter;
+    font-size: 32px;
+  }
+}
+.parallax-bg {
+  background-image: url(/images/bg-parralax-snow-mobile-small.jpg);
+  background-position: 0% 50%;
+  background-size: 100%;
+  height: 50vh;
+  background-repeat: repeat-y;
+}
+.parallax-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 50vh;
+  background-repeat: no-repeat;
+  opacity: .7;
+}
+
+#about {
+  background-image: url(/images/bg-billboard-shepard-mobile-small.jpg);
+}
+#songs {
+  background-image: url(/images/bg-billboard-girl-mobile-small.jpg);
+}
+#videos {
+  background-image: url(/images/bg-billboard-maryjo-mobile-small.jpg);
+}
+#social {
+  background-image: url(/images/bg-billboard-soldier-mobile-small.jpg);
+}
+
+
+
+/*----------------------------------------------------------------------------
+ * Main Block Elements
+ *---------------------------------------------------------------------------*/
+
+header {}
+section {
+}
+aside {}
+footer {}
+
+.fullwidth {
+  width: 100%;
+}
+
+/*----------------------------------------------------------------------------
+ * Typical Banner
+ *---------------------------------------------------------------------------*/
+
+/* Navigation in banner */
+
+header[role="banner"] {}
+
+header[role="banner"] hgroup h1 {}
+header[role="banner"] hgroup h2 {}
+
+header[role="banner"] nav[role="navigation"] {}
+header[role="banner"] nav[role="navigation"] ul {}
+header[role="banner"] nav[role="navigation"] li {}
+header[role="banner"] nav[role="navigation"] a {}
+
+/* Main Content */
+
+div[role=main] {}
+
+/*----------------------------------------------------------------------------
+ * Typical Article Layout
+ *---------------------------------------------------------------------------*/
+
+article {}
+article header {}
+article header hgroup {}
+article header time {}
+article section {}
+article aside {}
+article footer {}
+
+/*----------------------------------------------------------------------------
+ * Headings
+ *---------------------------------------------------------------------------*/
+
+/* All Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* Linked Headings*/
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
+
+/* Individual Headings */
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+/* Section Headings */
+
+section h1 {}
+section h2 {}
+section h3 {}
+section h4 {}
+section h5 {}
+section h6 {}
+
+/* Article Headings */
+
+article h1 {}
+article h2 {}
+article h3 {}
+article h4 {}
+article h5 {}
+article h6 {}
+
+/*----------------------------------------------------------------------------
+ * Text
+ *---------------------------------------------------------------------------*/
+
+.text-white {
+  color: $gray-lighter;
+}
+.lead {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.free-tickets {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+}
+
+/*----------------------------------------------------------------------------
+ * Embedded Content
+ *---------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------
+ * Forms
+ *---------------------------------------------------------------------------*/
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .parallax-bg {
+    background-image: url(/images/bg-parralax-snow-mobile.jpg);
+  }
+  #about {
+    background-image: url(/images/bg-billboard-shepard-mobile.jpg);
+  }
+  #songs {
+    background-image: url(/images/bg-billboard-girl-mobile.jpg);
+  }
+  #videos {
+    background-image: url(/images/bg-billboard-maryjo-mobile.jpg);
+  }
+  #social {
+    background-image: url(/images/bg-billboard-soldier-mobile.jpg);
+  }
+  .free-tickets {
+    bottom: 18%;
+    font-size: 22px;
+  }
+ }
+
+ /* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .parallax-bg {
+    background-image: url(/images/bg-parralax-snow.jpg);
+  }
+  #about {
+    background-image: url(/images/bg-billboard-shepard.jpg);
+  }
+  #songs {
+    background-image: url(/images/bg-billboard-girl.jpg);
+  }
+  #videos {
+    background-image: url(/images/bg-billboard-maryjo.jpg);
+  }
+  #social {
+    background-image: url(/images/bg-billboard-soldier.jpg);
+  }
+ }
+
