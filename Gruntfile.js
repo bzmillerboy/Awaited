@@ -57,7 +57,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'css/min/styles.min.css': ['css/styles.css']
+          'styles.min.css': ['css/styles.css']
         }
       }
     }
