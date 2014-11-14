@@ -253,6 +253,12 @@ article h6 {}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+  .main-nav .nav {
+    font-size: 16px;
+    li>a {
+      padding: 12px 10px;
+    }
+  }
   .parallax-bg {
     background-image: url(images/bg-parralax-snow-mobile.jpg);
   }
