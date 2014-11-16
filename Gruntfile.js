@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['js/jquery-1.11.1.min.js', 'js/bootstrap.min.js', 'js/skrollr.min.js', 'js/skrollr.menu.js', 'js/scripts.js' ],
+        src: ['js/skrollr.min.js', 'js/skrollr.menu.js', 'js/scripts.js' ],
         dest: 'js/site.js',
       },
     },
